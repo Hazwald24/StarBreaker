@@ -6,13 +6,27 @@ public class Ball : MonoBehaviour
 {
     Rigidbody rb;
 
-    public static float initialForce = 200f;
+    public static float initialForce = 600f;
+    bool ballStarted;
+
+    //private float time = 0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         //DEBUGGING
-        rb.AddForce(new Vector3(0, initialForce, 0));
+        
+    }
+
+    void Update()
+    {
+        /*time += Time.deltaTime;
+        if(time > 5f)
+        {
+            initialForce += 100f;
+            time -= 5f;
+        }
+        */
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -22,5 +36,22 @@ public class Ball : MonoBehaviour
         {
             brick.TakeDamage();
         }
+    }
+
+    public void StartBall()
+    {
+        if (!ballStarted)
+        {
+            rb.isKinematic = false;
+            rb.AddForce(new Vector3(initialForce, initialForce, 0));
+            ballStarted = true;
+            //PARENT BACK TO THE WORLD
+            transform.SetParent(transform.parent.parent);
+        }
+    }
+
+    public bool BallStarted()
+    {
+        return ballStarted;
     }
 }

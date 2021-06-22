@@ -11,7 +11,7 @@ public class Brick : MonoBehaviour
     void Start()
     {
         //Add the brick to the game manager
-
+        GameManager.instance.AddBrick(gameObject);
     }
 
     public void TakeDamage()
@@ -22,7 +22,7 @@ public class Brick : MonoBehaviour
             //Create particles
 
             //Report to game manager
-
+            GameManager.instance.RemoveBrick(gameObject);
             //Report to score manager
 
             //Destroy brick
