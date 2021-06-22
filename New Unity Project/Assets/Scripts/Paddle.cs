@@ -6,13 +6,16 @@ public class Paddle : MonoBehaviour
 {
     public static Paddle instance;
 
-    public GameObject centre, leftCap, rightCap;
+    public float newSize = 2f;
+    [Space]
+    public GameObject centre;
+    public GameObject leftCap, rightCap;
 
     Rigidbody rb;
     BoxCollider col;
 
     float speed = 10f;
-
+    
     public int health = 1;
 
     private void Awake()
@@ -25,7 +28,7 @@ public class Paddle : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         col = GetComponent<BoxCollider>();
 
-        Resize(2f);
+        ResetPaddle();
     }
 
     public void TakeDamage()
@@ -100,7 +103,7 @@ public class Paddle : MonoBehaviour
     public void ResetPaddle()
     {
         transform.position = new Vector3(Camera.main.transform.position.x, transform.position.y, 0);
-        //Resize(newSize);
+        Resize(newSize);
 
     }
 }

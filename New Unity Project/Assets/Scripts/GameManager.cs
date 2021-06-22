@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,11 +10,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject ballPrefab;
 
-
     List<GameObject> brickList = new List<GameObject>();
     List<GameObject> ballList = new List<GameObject>();
 
     int lives;
+    public Text livesText;
+
+  
 
     void Awake()
     {
@@ -29,25 +33,27 @@ public class GameManager : MonoBehaviour
         CreateBall();
         lives = 3;
         //UPDATE UI
+        UpdateUI();
     }
 
     //---------------LIVES--------------------//
+
+    void UpdateUI()
+    {
+        livesText.text = "Lives: " + lives.ToString("D2");
+    }
 
     void RemoveLife()
     {
         lives--;
         //UPDATE UI
-
+        UpdateUI();
         //LOSE CONDITION
         if (lives == 0)
         {
             print("GAME OVER");
             return;
         }
-
-        CreateBall();
-        //RESET PADDLE POSITION
-        Paddle.instance.ResetPaddle();
     }
 
     public void LostBall(GameObject ball)
@@ -57,8 +63,9 @@ public class GameManager : MonoBehaviour
 
         if(ballList.Count == 0)
         {
-            RemoveLife();
+           //Do something? 
         }
+        CreateBall();
     }
 
     //---------------BRICKS--------------------//
@@ -76,6 +83,11 @@ public class GameManager : MonoBehaviour
         {
             print("You Won!");
         }
+    }
+
+    public void BrickPassed(GameObject brick)
+    {
+        RemoveLife();
     }
 
     //---------------CREATE-BALL-------------------//

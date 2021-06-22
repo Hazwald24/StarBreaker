@@ -10,5 +10,9 @@ public class DeadZone : MonoBehaviour
         {
             GameManager.instance.LostBall(col.gameObject);
         }
+        if (col.CompareTag("Brick"))
+        {
+            GameManager.instance.BrickPassed(col.gameObject);
+        }
     }
 }

@@ -24,7 +24,7 @@ public class Brick : MonoBehaviour
             //Report to game manager
             GameManager.instance.RemoveBrick(gameObject);
             //Report to score manager
-
+            ScoreManager.instance.AddScore(score);
             //Destroy brick
             Destroy(gameObject);
         }
