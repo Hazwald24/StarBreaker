@@ -76,6 +76,7 @@ public class Paddle : MonoBehaviour
                 ballRb.AddForce(new Vector3(Mathf.Abs(difference * 200), vel, 0));
             }
         }
+        
     }
 
     void Resize(float xScale)

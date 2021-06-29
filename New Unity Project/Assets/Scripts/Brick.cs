@@ -7,6 +7,10 @@ public class Brick : MonoBehaviour
 
     public int health = 1;
     public int score = 50;
+    public float speed;
+
+
+    //BrickSpawner brickSpawner = GameManager.instance.GetComponent<BrickSpawner>();
 
     void Start()
     {
@@ -32,7 +36,8 @@ public class Brick : MonoBehaviour
 
     private void Update()
     {
-        transform.position -= new Vector3(0, 1 * Time.deltaTime, 0);
+        speed = GameManager.instance.GetSpeed();
+        transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
     }
 
     private void OnCollisionEnter(Collision collision)

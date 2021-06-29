@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     int lives;
     public Text livesText;
 
-  
+    public float brickSpeed;
 
     void Awake()
     {
@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         ResetGame();
+        brickSpeed = 1f;
     }
 
     private void ResetGame()
@@ -88,6 +89,16 @@ public class GameManager : MonoBehaviour
     public void BrickPassed(GameObject brick)
     {
         RemoveLife();
+    }
+
+    public float GetSpeed()
+    {
+        return brickSpeed;
+    }
+
+    public void IncreaseSpeed()
+    {
+        brickSpeed *= 1.5f;
     }
 
     //---------------CREATE-BALL-------------------//
