@@ -58,6 +58,11 @@ public class Paddle : MonoBehaviour
         rb.MovePosition(transform.position + new Vector3(h, 0, 0).normalized * speed * Time.fixedDeltaTime);
     }
 
+    public void MovePaddle(float x)
+    {
+        rb.MovePosition(transform.position + new Vector3(x, 0, 0).normalized * speed * Time.fixedDeltaTime);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
