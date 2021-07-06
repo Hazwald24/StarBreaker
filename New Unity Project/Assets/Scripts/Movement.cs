@@ -1,33 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Movement : MonoBehaviour
-{
-    private Vector3 position;
-
-    public Paddle paddle;
-
-
-    // Update is called once per frame
-    void Update()
+using System.Collections;  
+using System.Collections.Generic;  
+using UnityEngine;  
+public class Movement: MonoBehaviour {  
+    //variables    
+    public float moveSpeed = 300;  
+    public GameObject paddle;  
+    private Rigidbody paddleBody;  
+    private float ScreenWidth;  
+    // Use this for initialization    
+    void Start() {  
+        ScreenWidth = Screen.width;  
+        paddleBody = paddle.GetComponent<Rigidbody>();  
+    }  
+    // Update is called once per frame    
+    void Update() {  
+        int i = 0;  
+        //loop over every touch found    
+        while (i < Input.touchCount) {  
+            if (Input.GetTouch(i).position.x > ScreenWidth / 2) {  
+                //move right    
+                RunCharacter(1.0f);  
+            }  
+            if (Input.GetTouch(i).position.x < ScreenWidth / 2) {  
+                //move left    
+                RunCharacter(-1.0f);
+            }  
+            ++i;  
+        }  
+    }  
+    void FixedUpdate() {  
+        #if UNITY_EDITOR  
+        RunCharacter(Input.GetAxis("Horizontal"));  
+        #endif  
+    }
+    private void RunCharacter(float horizontalInput)
     {
-        if(Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-
-            Vector3 paddlePos = Paddle.instance.gameObject.transform.position;
-
-            Vector2 fingerPos = touch.position;
-
-            if(fingerPos.x > paddlePos.x)
-            {
-                paddle.GetComponent<Paddle>().MovePaddle(1);
-            }
-            else
-            {
-                paddle.GetComponent<Paddle>().MovePaddle(-1);
-            }
+        //move player
+        if (paddleBody != null)
+        { 
+            paddleBody.AddForce(new Vector2(horizontalInput * moveSpeed * Time.deltaTime, 0));
         }
     }
-}
+} 

@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         //LOSE CONDITION
         if (lives == 0)
         {
-            print("GAME OVER");
+            Application.Quit();
             return;
         }
     }
@@ -79,11 +79,6 @@ public class GameManager : MonoBehaviour
     public void RemoveBrick(GameObject brick)
     {
         brickList.Remove(brick);
-        //WINNING CONDITION
-        if(brickList.Count == 0)
-        {
-            print("You Won!");
-        }
     }
 
     public void BrickPassed(GameObject brick)
@@ -120,7 +115,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && ballList.Count > 0)
+        if (ballList.Count > 0)
         {
             if(ballList[0] != null && !ballList[0].GetComponent<Ball>().BallStarted())
             {

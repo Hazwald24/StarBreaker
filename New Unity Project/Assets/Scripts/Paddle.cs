@@ -44,6 +44,7 @@ public class Paddle : MonoBehaviour
 
             //Destroy brick
             Destroy(gameObject);
+            Application.Quit();
         }
     }
 
@@ -58,9 +59,16 @@ public class Paddle : MonoBehaviour
         rb.MovePosition(transform.position + new Vector3(h, 0, 0).normalized * speed * Time.fixedDeltaTime);
     }
 
-    public void MovePaddle(float x)
+    public void MovePaddleRight()
     {
-        rb.MovePosition(transform.position + new Vector3(x, 0, 0).normalized * speed * Time.fixedDeltaTime);
+        Debug.Log("here");
+        rb.MovePosition(transform.position + new Vector3(1, 0, 0).normalized * speed * Time.fixedDeltaTime);
+    }
+
+    public void MovePaddleLeft()
+    {
+        Debug.Log("there");
+        rb.MovePosition(transform.position + new Vector3(-1, 0, 0).normalized * speed * Time.fixedDeltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)
