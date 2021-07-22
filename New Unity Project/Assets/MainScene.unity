@@ -550,9 +550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec50b868314f6a48b667d99d63ba7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brickPrefab: {fileID: 7940363299182659606, guid: 55012c3bad668d94b97d72f500cd5ba7, type: 3}
+  brickPrefab: {fileID: 7483997242312642284, guid: b1e8732c5e39bfb448e59410fdc525b0, type: 3}
   respawnTime: 1
-  speed: 0
+  speed: 3
 --- !u!1 &975017532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,7 +1545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.030000001, y: 0.94770396}
   m_AnchorMax: {x: 0.21000001, y: 0.9815922}
-  m_AnchoredPosition: {x: 0.7999878, y: 0.9000244}
+  m_AnchoredPosition: {x: 0.79992676, y: 0.9000244}
   m_SizeDelta: {x: -0.70599365, y: -1.2949982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880559174
