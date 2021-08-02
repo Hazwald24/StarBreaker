@@ -128,6 +128,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomber_red Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 594b0bf6786194646ad3ecdfb677860d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 594b0bf6786194646ad3ecdfb677860d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: 594b0bf6786194646ad3ecdfb677860d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 594b0bf6786194646ad3ecdfb677860d, type: 3}
 --- !u!1 &7483997242312642284 stripped
