@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5358058267086058417}
   - component: {fileID: 9076017748887043092}
   - component: {fileID: 6489838003821578462}
+  - component: {fileID: 7104319919728665117}
+  - component: {fileID: 6248147343004383418}
   m_Layer: 0
   m_Name: Agile_blue_spaceship
   m_TagString: Untagged
@@ -89,3 +91,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7104319919728665117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4688376093679429899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2894518, y: 0.46803713, z: 1.2985904}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6248147343004383418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4688376093679429899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253cbf685953e44780c901eb7298298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  score: 50
+  speed: 0
