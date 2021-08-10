@@ -5,6 +5,8 @@ using UnityEngine;
 public class BrickSpawner : MonoBehaviour
 {
     public GameObject brickPrefab;
+   
+
     public float respawnTime;
     
     private Vector2 screenBounds;
@@ -19,6 +21,7 @@ public class BrickSpawner : MonoBehaviour
 
     void Start()
     {
+        
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         
         pos1 = new Vector2(3f * -screenBounds.x / 4f, screenBounds.y * -2);
@@ -72,7 +75,7 @@ public class BrickSpawner : MonoBehaviour
             if (timer >= timeInterval)
             {
                 timer -= timeInterval;
-                respawnTime /= 2;
+                respawnTime /= 0.5f;
                 GameManager.instance.IncreaseSpeed();
             }
         }

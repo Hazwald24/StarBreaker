@@ -8,8 +8,8 @@ public class Paddle : MonoBehaviour
 
     public float newSize = 2f;
     [Space]
-    public GameObject centre;
-    public GameObject leftCap, rightCap;
+    public GameObject paddle;
+    
 
     Rigidbody rb;
     BoxCollider col;
@@ -28,7 +28,7 @@ public class Paddle : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         col = GetComponent<BoxCollider>();
 
-        ResetPaddle();
+        
     }
 
     public void TakeDamage()
@@ -90,34 +90,8 @@ public class Paddle : MonoBehaviour
             }
         }
         
-    }
-
-    void Resize(float xScale)
-    {
-        Vector3 initScale = centre.transform.localScale;
-        initScale.x = xScale;
-        centre.transform.localScale = initScale;
-
-        //LEFT CAP
-        Vector3 leftCapPos = new Vector3(centre.transform.position.x + (xScale / 2), leftCap.transform.position.y, leftCap.transform.position.z);
-        leftCap.transform.position = leftCapPos;
+     }
         
-        //RIGHT CAP
-        Vector3 rightCapPos = new Vector3(centre.transform.position.x - (xScale / 2), rightCap.transform.position.y, rightCap.transform.position.z);
-        rightCap.transform.position = rightCapPos;
+ }
 
-        //COLLIDER SCALE
-        Vector3 colScale = initScale;
-        colScale.x += 0.6f*2;
 
-        col.size = colScale;
-
-    }
-
-    public void ResetPaddle()
-    {
-        transform.position = new Vector3(Camera.main.transform.position.x, transform.position.y, 0);
-        Resize(newSize);
-
-    }
-}
