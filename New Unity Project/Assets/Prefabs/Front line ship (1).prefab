@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5235992219119122670}
   - component: {fileID: 8020080149571374116}
   - component: {fileID: 8261826035933095797}
-  - component: {fileID: 6250466334668184611}
+  - component: {fileID: -6450230212169006364}
   m_Layer: 0
   m_Name: Front line ship (1)
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8380618464656797169}
-  m_LocalRotation: {x: -0.50336576, y: 0.50336576, z: -0.49661142, w: 0.49661142}
-  m_LocalPosition: {x: -25, y: 0, z: 0}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: 1, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.774, z: -90}
+  m_LocalEulerAnglesHint: {x: 180, y: -90, z: 90}
 --- !u!33 &5235992219119122670
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6399704, y: 0.5246202, z: 1.3829396}
   m_Center: {x: -0.000000059604666, y: 0, z: 0}
---- !u!114 &6250466334668184611
+--- !u!114 &-6450230212169006364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
