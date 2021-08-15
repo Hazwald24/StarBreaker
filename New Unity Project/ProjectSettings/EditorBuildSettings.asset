@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/MenuScene.unity
     guid: 0f93f6af91a95fb489bac263da960f30
   - enabled: 1
+    path: Assets/ELVIS UI TEST.unity
+    guid: 9bd2cfd114bf0a94f8b10005cc720460
+  - enabled: 1
     path: Assets/MainScene.unity
     guid: f314bfb2b7520ec4393d21482b6a7529
   m_configObjects: {}

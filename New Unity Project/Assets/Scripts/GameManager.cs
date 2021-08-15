@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
 
     public void IncreaseSpeed()
     {
-        brickSpeed *= 1.5f;
+        brickSpeed *= 0.5f;
     }
 
     //---------------CREATE-BALL-------------------//

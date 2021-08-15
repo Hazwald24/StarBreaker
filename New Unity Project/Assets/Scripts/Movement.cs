@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;  
 public class Movement: MonoBehaviour {  
     //variables    
-    public float moveSpeed = 300;  
+    public float moveSpeed = 10;  
     public GameObject paddle;  
     private Rigidbody paddleBody;  
     private float ScreenWidth;  

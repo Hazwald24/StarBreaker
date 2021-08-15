@@ -23,7 +23,7 @@ public class Ball : MonoBehaviour
         /*time += Time.deltaTime;
         if(time > 5f)
         {
-            initialForce += 100f;
+            initialForce += 300f;
             time -= 5f;
         }
         */

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,11 +16,13 @@ public class Destroy : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    public void ResumeGame()
     {
-      if (other.CompareTag("Ship"))
-        {
-            Destroy(other.gameObject);
-        }
+
+    }
+
+    public void ReturnToMain()
+    {
+
     }
 }
