@@ -779,7 +779,11 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 897ded72aaf58e140815b551259c647a, type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &814318847
+=======
+--- !u!1 &819720035
+>>>>>>> parent of 311549f (Ui working)
 =======
 --- !u!1 &819720035
 >>>>>>> parent of 311549f (Ui working)
@@ -791,17 +795,23 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 814318849}
   - component: {fileID: 814318848}
   m_Layer: 0
   m_Name: GameObject (6)
 =======
+=======
+>>>>>>> parent of 311549f (Ui working)
   - component: {fileID: 819720036}
   - component: {fileID: 819720039}
   - component: {fileID: 819720038}
   - component: {fileID: 819720037}
   m_Layer: 5
   m_Name: Resume Game
+<<<<<<< HEAD
+>>>>>>> parent of 311549f (Ui working)
+=======
 >>>>>>> parent of 311549f (Ui working)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,8 +819,13 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!65 &814318848
 BoxCollider:
+=======
+--- !u!224 &819720036
+RectTransform:
+>>>>>>> parent of 311549f (Ui working)
 =======
 --- !u!224 &819720036
 RectTransform:
@@ -819,6 +834,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 814318847}
   m_Material: {fileID: 0}
@@ -830,6 +846,8 @@ RectTransform:
 --- !u!4 &814318849
 Transform:
 =======
+=======
+>>>>>>> parent of 311549f (Ui working)
   m_GameObject: {fileID: 819720035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -890,11 +908,15 @@ MonoBehaviour:
       m_Calls: []
 --- !u!114 &819720038
 MonoBehaviour:
+<<<<<<< HEAD
+>>>>>>> parent of 311549f (Ui working)
+=======
 >>>>>>> parent of 311549f (Ui working)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 814318847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -905,6 +927,8 @@ MonoBehaviour:
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> parent of 311549f (Ui working)
   m_GameObject: {fileID: 819720035}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -937,9 +961,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819720035}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 >>>>>>> parent of 311549f (Ui working)
 =======
 >>>>>>> parent of 7173660 (issues)
+=======
+>>>>>>> parent of 311549f (Ui working)
 --- !u!1 &915664819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1070,7 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &915664824
 =======
 --- !u!1 &919707856
@@ -1112,6 +1140,8 @@ MonoBehaviour:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> parent of 311549f (Ui working)
 --- !u!1 &919707856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,6 +2549,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &3023825365131178396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2687,5 +2718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94ec105fd8d4b0149ad06d8da0705c16, type: 3}
+=======
+>>>>>>> parent of 311549f (Ui working)
 =======
 >>>>>>> parent of 311549f (Ui working)
