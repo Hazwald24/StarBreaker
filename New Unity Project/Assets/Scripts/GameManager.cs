@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     List<GameObject> brickList = new List<GameObject>();
     List<GameObject> ballList = new List<GameObject>();
 
-    public int lives;
+    int lives;
     public Text livesText;
 
     public float brickSpeed;
@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        livesText.text = "Lives" + lives;
         ResetGame();
         brickSpeed = 1f;
     }

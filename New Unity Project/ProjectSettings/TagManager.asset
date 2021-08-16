@@ -7,7 +7,6 @@ TagManager:
   - Ball
   - Brick
   - Ship
-  - Bottom
   layers:
   - Default
   - TransparentFX
