@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    public GameManager gm;
     Rigidbody rb;
 
     public static float initialForce = 600f;
@@ -43,7 +44,7 @@ public class Ball : MonoBehaviour
         if (!ballStarted)
         {
             rb.isKinematic = false;
-            rb.AddForce(new Vector3(initialForce, initialForce, 0));
+            rb.AddForce(new Vector3(initialForce, initialForce, 20));
             ballStarted = true;
             //PARENT BACK TO THE WORLD
             transform.SetParent(transform.parent.parent);
