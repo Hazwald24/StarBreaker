@@ -11,7 +11,7 @@ public class Ball : MonoBehaviour
 
     //private float time = 0f;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
         //DEBUGGING

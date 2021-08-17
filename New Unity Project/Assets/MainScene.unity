@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 152778565}
   m_Layer: 0
   m_Name: GameObject (5)
-  m_TagString: Brick
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -894,7 +894,7 @@ GameObject:
   - component: {fileID: 1074079166}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Brick
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -941,7 +941,7 @@ GameObject:
   - component: {fileID: 1170225202}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Brick
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -998,7 +998,7 @@ GameObject:
   - component: {fileID: 1177294111}
   m_Layer: 0
   m_Name: GameObject (3)
-  m_TagString: Brick
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1045,7 +1045,7 @@ GameObject:
   - component: {fileID: 1271958735}
   m_Layer: 0
   m_Name: GameObject (4)
-  m_TagString: Brick
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1130,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1386859657
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386859656}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 71ecb109509667240bd742a599f05f89, type: 3}
@@ -1528,7 +1528,7 @@ GameObject:
   - component: {fileID: 1740516897}
   m_Layer: 0
   m_Name: GameObject (2)
-  m_TagString: Brick
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
 
     public void OpenOptions()
     {
-
+        SceneManager.LoadScene("OptionScene");
     }
 
     public void CloseOptions()
