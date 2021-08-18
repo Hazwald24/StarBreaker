@@ -1704,7 +1704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newSize: 2
   paddle: {fileID: 1908078352}
-  health: 1
+  health: 3
 --- !u!1 &2114006864
 GameObject:
   m_ObjectHideFlags: 0
