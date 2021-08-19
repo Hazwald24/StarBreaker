@@ -97,15 +97,7 @@ public class GameManager : MonoBehaviour
 
     //---------------CREATE-BALL-------------------//
 
-    void CreateBall()
-    {
-        GameObject newBall = Instantiate(ballPrefab);
-        newBall.transform.position = Paddle.instance.gameObject.transform.position + new Vector3(0, 1.5f, 0);
-        newBall.transform.SetParent(Paddle.instance.gameObject.transform);
-        newBall.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-
-        ballList.Add(newBall);
-    }
+    
 
     void StartBall()
     {

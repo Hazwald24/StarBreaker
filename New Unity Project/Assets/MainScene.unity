@@ -582,7 +582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188319342689470859, guid: 897ded72aaf58e140815b551259c647a, type: 3}
       propertyPath: m_TagString
-      value: Ball
+      value: Paddle
       objectReference: {fileID: 0}
     - target: {fileID: 7532792609427886897, guid: 897ded72aaf58e140815b551259c647a, type: 3}
       propertyPath: m_RootOrder
@@ -1129,8 +1129,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981836075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 32.86, z: 0}
-  m_LocalScale: {x: 13.72, y: 1, z: 1}
+  m_LocalPosition: {x: 1.3489, y: 32.86, z: 0}
+  m_LocalScale: {x: 16.417353, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1294249495}
   m_RootOrder: 2
@@ -1391,7 +1391,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386859656}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 71ecb109509667240bd742a599f05f89, type: 3}
@@ -1988,7 +1988,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesText: {fileID: 1880559174}
-  livesRemaining: 3
 --- !u!4 &1973345696
 Transform:
   m_ObjectHideFlags: 0
