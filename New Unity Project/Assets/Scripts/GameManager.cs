@@ -21,13 +21,12 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         instance = this;
-    }
 
-    private void Start()
-    {
         ResetGame();
         brickSpeed = 1f;
     }
+
+   
 
     private void ResetGame()
     {
