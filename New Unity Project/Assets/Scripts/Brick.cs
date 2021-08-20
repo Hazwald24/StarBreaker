@@ -12,7 +12,7 @@ public class Brick : MonoBehaviour
 
     //BrickSpawner brickSpawner = GameManager.instance.GetComponent<BrickSpawner>();
 
-    void Start()
+    void Awake()
     {
         //Add the brick to the game manager
         GameManager.instance.AddBrick(gameObject);

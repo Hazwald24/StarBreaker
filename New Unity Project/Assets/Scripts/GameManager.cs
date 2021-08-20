@@ -24,17 +24,16 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         instance = this;
-    }
 
-    private void Start()
-    {
         ResetGame();
         brickSpeed = 1f;
     }
 
+   
+
     private void ResetGame()
     {
-        CreateBall();
+       // CreateBall();
         lives = 3;
         //UPDATE UI
         UpdateUI();
@@ -67,9 +66,10 @@ public class GameManager : MonoBehaviour
 
         if(ballList.Count == 0)
         {
-           //Do something? 
+            //Do something? 
+          //  CreateBall();
         }
-        CreateBall();
+      
     }
 
     //---------------BRICKS--------------------//
@@ -101,15 +101,7 @@ public class GameManager : MonoBehaviour
 
     //---------------CREATE-BALL-------------------//
 
-    void CreateBall()
-    {
-        GameObject newBall = Instantiate(ballPrefab);
-        newBall.transform.position = Paddle.instance.gameObject.transform.position + new Vector3(0, 1.5f, 0);
-        newBall.transform.SetParent(Paddle.instance.gameObject.transform);
-        newBall.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-
-        ballList.Add(newBall);
-    }
+    
 
     void StartBall()
     {
