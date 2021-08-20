@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     private void ResetGame()
     {
-        CreateBall();
+       // CreateBall();
         lives = 3;
         //UPDATE UI
         UpdateUI();
@@ -63,9 +63,10 @@ public class GameManager : MonoBehaviour
 
         if(ballList.Count == 0)
         {
-           //Do something? 
+            //Do something? 
+          //  CreateBall();
         }
-        CreateBall();
+      
     }
 
     //---------------BRICKS--------------------//
