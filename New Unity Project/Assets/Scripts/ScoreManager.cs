@@ -29,4 +29,9 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText.text = "Score: " + currentScore.ToString("D5");
     }
+
+    public int getScore()
+    {
+        return currentScore;
+    }
 }

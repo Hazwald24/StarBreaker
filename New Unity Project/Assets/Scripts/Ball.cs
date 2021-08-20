@@ -6,10 +6,10 @@ public class Ball : MonoBehaviour
 {
     Rigidbody rb;
 
-    public static float initialForce = 600f;
+    public static float initialForce = 300f;
     bool ballStarted;
 
-    //private float time = 0f;
+    private float time = 0f;
 
     void Start()
     {
@@ -20,13 +20,12 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-        /*time += Time.deltaTime;
+        time += Time.deltaTime;
         if(time > 5f)
         {
-            initialForce += 300f;
+            initialForce += 100f;
             time -= 5f;
         }
-        */
     }
 
     private void OnCollisionEnter(Collision collision)

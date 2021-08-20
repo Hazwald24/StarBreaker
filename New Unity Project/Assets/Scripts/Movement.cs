@@ -19,11 +19,11 @@ public class Movement: MonoBehaviour {
         while (i < Input.touchCount) {  
             if (Input.GetTouch(i).position.x > ScreenWidth / 2) {  
                 //move right    
-                RunCharacter(1.0f);  
+                RunCharacter(20.0f);  
             }  
             if (Input.GetTouch(i).position.x < ScreenWidth / 2) {  
                 //move left    
-                RunCharacter(-1.0f);
+                RunCharacter(-20.0f);
             }  
             ++i;  
         }  

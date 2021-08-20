@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,11 +11,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject ballPrefab;
 
+    public MenuController menuController;
+
     List<GameObject> brickList = new List<GameObject>();
     List<GameObject> ballList = new List<GameObject>();
 
     int lives;
-    public Text livesText;
+    public Text livesText, ballStartText;
 
     public float brickSpeed;
 
@@ -52,7 +55,7 @@ public class GameManager : MonoBehaviour
         //LOSE CONDITION
         if (lives == 0)
         {
-            Application.Quit();
+            menuController.GameOver();
             return;
         }
     }
@@ -119,10 +122,27 @@ public class GameManager : MonoBehaviour
         {
             if(ballList[0] != null && !ballList[0].GetComponent<Ball>().BallStarted())
             {
-                StartBall();
+                StartCoroutine(ExecuteAfterTime());
             }
         }
     }
 
+    IEnumerator ExecuteAfterTime()
+    {
+        ballStartText.text = "Ball start in: 3";
 
+        yield return new WaitForSeconds(1);
+
+        ballStartText.text = "Ball start in: 2";
+
+        yield return new WaitForSeconds(1);
+
+        ballStartText.text = "Ball start in: 1";
+
+        yield return new WaitForSeconds(1);
+
+        StartBall();
+
+        ballStartText.text = "";
+    }
 }

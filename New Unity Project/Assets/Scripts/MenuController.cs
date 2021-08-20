@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
     public string mainMenuScene;
-    public GameObject pauseMenu;
+    public GameObject pauseMenu, gameOverScreen;
     public bool isPaused;
+    public Text scoreText;
+    public ScoreManager scoreManager;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +29,7 @@ public class MenuController : MonoBehaviour
             }
             else
             {
-                isPaused = true;
-                pauseMenu.SetActive(true);
-                Time.timeScale = 0f;
+                PauseGame();
             }
         }
     }
@@ -40,8 +41,36 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void PauseGame()
+    {
+        isPaused = true;
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
     public void ReturnToMain()
     {
+        ResumeGame();
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void GameOver()
+    {
+        isPaused = true;
+        gameOverScreen.SetActive(true);
+        Time.timeScale = 0f;
+
+        int score = scoreManager.getScore();
+        scoreText.text = score.ToString("D5");
+    }
+
+    public void RestartGame()
+    {
+        isPaused = false;
+        gameOverScreen.SetActive(false);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainScene");
+    }
+
+
 }

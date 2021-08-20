@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Paddle : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class Paddle : MonoBehaviour
     public float newSize = 2f;
     [Space]
     public GameObject paddle;
-    
+    public MenuController menuController;
+
 
     Rigidbody rb;
     BoxCollider col;
@@ -44,7 +46,7 @@ public class Paddle : MonoBehaviour
 
             //Destroy brick
             Destroy(gameObject);
-            Application.Quit();
+            menuController.GameOver();
         }
     }
 
