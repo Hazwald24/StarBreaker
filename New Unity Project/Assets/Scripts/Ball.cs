@@ -11,12 +11,7 @@ public class Ball : MonoBehaviour
 
     private float time = 0f;
 
-    void Awake()
-    {
-
-    }
-
-    void Start()  // changed from void Start to void Awake to make sure line 45 is referenced properly   
+    void Start()
     {
         rb = GetComponent<Rigidbody>();
         //DEBUGGING
