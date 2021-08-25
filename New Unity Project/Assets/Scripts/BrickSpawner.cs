@@ -18,7 +18,7 @@ public class BrickSpawner : MonoBehaviour
     private float timer;
     public float speed;
 
-    private float timeInterval = 25f;
+    private float timeInterval = 15f;
 
     void Start()
     {

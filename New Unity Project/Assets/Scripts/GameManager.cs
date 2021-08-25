@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         ResetGame();
-        brickSpeed = 1f;
+        brickSpeed = 2f;
     }
 
     private void ResetGame()
@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
 
     public void IncreaseSpeed()
     {
-        brickSpeed *= 0.5f;
+        brickSpeed *= 1.5f;
     }
 
     //---------------CREATE-BALL-------------------//

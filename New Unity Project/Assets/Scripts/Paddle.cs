@@ -16,7 +16,7 @@ public class Paddle : MonoBehaviour
     Rigidbody rb;
     BoxCollider col;
 
-    float speed = 10f;
+    float speed = 20f;
     
     public int health = 1;
 
@@ -58,18 +58,17 @@ public class Paddle : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         }
-        rb.MovePosition(transform.position + new Vector3(h, 0, 0).normalized * speed * Time.fixedDeltaTime);
+        //rb.MovePosition(transform.position + new Vector3(h, 0, 0).normalized * speed * Time.fixedDeltaTime);
+        rb.velocity = new Vector3(h * speed, 0, 0);
     }
 
     public void MovePaddleRight()
     {
-        Debug.Log("here");
         rb.MovePosition(transform.position + new Vector3(1, 0, 0).normalized * speed * Time.fixedDeltaTime);
     }
 
     public void MovePaddleLeft()
     {
-        Debug.Log("there");
         rb.MovePosition(transform.position + new Vector3(-1, 0, 0).normalized * speed * Time.fixedDeltaTime);
     }
 

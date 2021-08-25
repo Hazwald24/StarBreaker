@@ -14,6 +14,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        initialForce = 300f;
         //DEBUGGING
         
     }
